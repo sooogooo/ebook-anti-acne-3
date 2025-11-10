@@ -1,0 +1,56 @@
+<svg width="500" height="600" viewBox="0 0 500 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="500" height="600" fill="#f8f9fa" rx="10"/>
+  
+  <!-- 标题 -->
+  <text x="250" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2c3e50">抗炎饮食餐盘 - 科学配比</text>
+  
+  <!-- 餐盘外圈 -->
+  <circle cx="250" cy="320" r="180" fill="none" stroke="#ddd" stroke-width="3"/>
+  
+  <!-- 蔬菜水果区域 (50%) -->
+  <path d="M 250 140 A 180 180 0 0 1 430 320 L 250 320 Z" fill="#e8f5e8" stroke="#4caf50" stroke-width="2"/>
+  <text x="340" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2e7d32">50%</text>
+  <text x="340" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2e7d32">蔬菜水果</text>
+  <text x="340" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">深色蔬菜</text>
+  <text x="340" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">彩虹蔬果</text>
+  
+  <!-- 优质蛋白质区域 (25%) -->
+  <path d="M 250 140 A 180 180 0 0 1 70 320 L 250 320 Z" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
+  <text x="160" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1565c0">25%</text>
+  <text x="160" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#1565c0">优质蛋白质</text>
+  <text x="160" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">深海鱼类</text>
+  <text x="160" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">豆类坚果</text>
+  
+  <!-- 全谷物区域 (20%) -->
+  <path d="M 70 320 A 180 180 0 0 1 190 490 L 250 320 Z" fill="#fff3e0" stroke="#ff9800" stroke-width="2"/>
+  <text x="130" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#e65100">20%</text>
+  <text x="130" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#e65100">全谷物</text>
+  <text x="130" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">糙米藜麦</text>
+  <text x="130" y="453" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">燕麦薯类</text>
+  
+  <!-- 健康脂肪区域 (5%) -->
+  <path d="M 190 490 A 180 180 0 0 1 310 490 L 250 320 Z" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2"/>
+  <text x="250" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#6a1b9a">5%</text>
+  <text x="250" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#6a1b9a">健康脂肪</text>
+  <text x="250" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">橄榄油</text>
+  
+  <!-- 中心装饰 -->
+  <circle cx="250" cy="320" r="50" fill="#fff" stroke="#ddd" stroke-width="2"/>
+  <text x="250" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">抗炎</text>
+  <text x="250" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">饮食</text>
+  
+  <!-- 底部说明 -->
+  <g transform="translate(50, 520)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">抗炎食物重点：</text>
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="11" fill="#4caf50">• 深海鱼类：富含Omega-3脂肪酸</text>
+    <text x="0" y="40" font-family="Arial, sans-serif" font-size="11" fill="#4caf50">• 彩虹蔬果：提供丰富抗氧化剂</text>
+    <text x="250" y="20" font-family="Arial, sans-serif" font-size="11" fill="#2196f3">• 全谷物：低GI，稳定血糖</text>
+    <text x="250" y="40" font-family="Arial, sans-serif" font-size="11" fill="#9c27b0">• 坚果种子：提供锌和维生素E</text>
+  </g>
+  
+  <!-- 避免食物提示 -->
+  <g transform="translate(50, 570)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="11" fill="#f44336">避免：高糖食物、精制谷物、过多乳制品、油炸食品</text>
+  </g>
+</svg>

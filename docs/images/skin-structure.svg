@@ -1,0 +1,53 @@
+<svg width="400" height="500" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="400" height="500" fill="#f8f9fa" rx="10"/>
+  
+  <!-- 标题 -->
+  <text x="200" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2c3e50">皮肤结构示意图</text>
+  
+  <!-- 表皮层 -->
+  <g transform="translate(50, 60)">
+    <rect width="300" height="80" fill="#ffebee" stroke="#e91e63" stroke-width="2" rx="8"/>
+    <text x="150" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#c2185b">表皮层</text>
+    <text x="150" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">角质层、透明层、颗粒层、棘层、基底层</text>
+    <text x="150" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#999">厚度：0.04-0.4mm</text>
+  </g>
+  
+  <!-- 真皮层 -->
+  <g transform="translate(50, 160)">
+    <rect width="300" height="100" fill="#e8f5e8" stroke="#4caf50" stroke-width="2" rx="8"/>
+    <text x="150" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2e7d32">真皮层</text>
+    <text x="150" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">乳头层、网状层</text>
+    <text x="150" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#999">含有：血管、神经、毛囊、皮脂腺</text>
+    <text x="150" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#999">厚度：1-2mm</text>
+  </g>
+  
+  <!-- 皮下组织 -->
+  <g transform="translate(50, 280)">
+    <rect width="300" height="80" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" rx="8"/>
+    <text x="150" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1565c0">皮下组织</text>
+    <text x="150" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">脂肪组织、结缔组织</text>
+    <text x="150" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#999">厚度：变化较大</text>
+  </g>
+  
+  <!-- 皮肤附属器标注 -->
+  <g transform="translate(50, 380)">
+    <circle cx="30" cy="30" r="8" fill="#ff9800" stroke="#f57c00" stroke-width="2"/>
+    <text x="50" y="35" font-family="Arial, sans-serif" font-size="12" fill="#666">毛囊</text>
+    
+    <circle cx="120" cy="30" r="8" fill="#9c27b0" stroke="#6a1b9a" stroke-width="2"/>
+    <text x="140" y="35" font-family="Arial, sans-serif" font-size="12" fill="#666">皮脂腺</text>
+    
+    <circle cx="210" cy="30" r="8" fill="#f44336" stroke="#c62828" stroke-width="2"/>
+    <text x="230" y="35" font-family="Arial, sans-serif" font-size="12" fill="#666">汗腺</text>
+  </g>
+  
+  <!-- 痤疮发生位置标注 -->
+  <g transform="translate(50, 440)">
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d32f2f">痤疮发生位置：</text>
+    <text x="0" y="35" font-family="Arial, sans-serif" font-size="11" fill="#666">• 毛囊皮脂腺单位</text>
+    <text x="0" y="50" font-family="Arial, sans-serif" font-size="11" fill="#666">• 皮脂分泌过多</text>
+    <text x="200" y="35" font-family="Arial, sans-serif" font-size="11" fill="#666">• 角化异常</text>
+    <text x="200" y="50" font-family="Arial, sans-serif" font-size="11" fill="#666">• 细菌感染</text>
+  </g>
+</svg>

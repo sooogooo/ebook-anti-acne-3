@@ -1,0 +1,222 @@
+/* 主题配色系统 - 女性化优雅设计 */
+
+:root {
+  /* 基础颜色 */
+  --white: #ffffff;
+  --black: #1a1a1a;
+  --gray-50: #fafafa;
+  --gray-100: #f5f5f5;
+  --gray-200: #e5e5e5;
+  --gray-300: #d4d4d4;
+  --gray-400: #a3a3a3;
+  --gray-500: #737373;
+  --gray-600: #525252;
+  --gray-700: #404040;
+  --gray-800: #262626;
+  --gray-900: #171717;
+}
+
+/* 玫瑰石英主题 - 默认主题 */
+[data-theme="rose-quartz"] {
+  --primary-color: #e8b4b8;
+  --primary-light: #f0d1d4;
+  --primary-dark: #d69399;
+  --secondary-color: #b8d4e8;
+  --accent-color: #f4c2c2;
+  --background-color: #fef7f8;
+  --surface-color: #ffffff;
+  --card-background: #ffffff;
+  --text-primary: #2d3748;
+  --text-secondary: #4a5568;
+  --text-muted: #718096;
+  --border-color: #e2e8f0;
+  --shadow-color: rgba(232, 180, 184, 0.15);
+  --gradient-primary: linear-gradient(135deg, #e8b4b8 0%, #f4c2c2 100%);
+  --gradient-secondary: linear-gradient(135deg, #b8d4e8 0%, #d4e8f4 100%);
+}
+
+/* 鼠尾草绿主题 */
+[data-theme="sage-green"] {
+  --primary-color: #b8c9b8;
+  --primary-light: #d4e1d4;
+  --primary-dark: #a3b5a3;
+  --secondary-color: #c9d8c9;
+  --accent-color: #a8c9a8;
+  --background-color: #f7faf7;
+  --surface-color: #ffffff;
+  --card-background: #ffffff;
+  --text-primary: #2d3748;
+  --text-secondary: #4a5568;
+  --text-muted: #718096;
+  --border-color: #e2e8f0;
+  --shadow-color: rgba(184, 201, 184, 0.15);
+  --gradient-primary: linear-gradient(135deg, #b8c9b8 0%, #a8c9a8 100%);
+  --gradient-secondary: linear-gradient(135deg, #c9d8c9 0%, #b8d4b8 100%);
+}
+
+/* 淡紫薰衣草主题 */
+[data-theme="lavender"] {
+  --primary-color: #c8b8e8;
+  --primary-light: #e1d4f1;
+  --primary-dark: #b39dd4;
+  --secondary-color: #d4c8e8;
+  --accent-color: #e8d4f0;
+  --background-color: #faf7ff;
+  --surface-color: #ffffff;
+  --card-background: #ffffff;
+  --text-primary: #2d3748;
+  --text-secondary: #4a5568;
+  --text-muted: #718096;
+  --border-color: #e2e8f0;
+  --shadow-color: rgba(200, 184, 232, 0.15);
+  --gradient-primary: linear-gradient(135deg, #c8b8e8 0%, #e8d4f0 100%);
+  --gradient-secondary: linear-gradient(135deg, #d4c8e8 0%, #e8d4e8 100%);
+}
+
+/* 蜜桃粉主题 */
+[data-theme="peach"] {
+  --primary-color: #ffd4a3;
+  --primary-light: #ffe8cc;
+  --primary-dark: #ffc288;
+  --secondary-color: #ffccb8;
+  --accent-color: #ffe4d4;
+  --background-color: #fffbf7;
+  --surface-color: #ffffff;
+  --card-background: #ffffff;
+  --text-primary: #2d3748;
+  --text-secondary: #4a5568;
+  --text-muted: #718096;
+  --border-color: #e2e8f0;
+  --shadow-color: rgba(255, 212, 163, 0.15);
+  --gradient-primary: linear-gradient(135deg, #ffd4a3 0%, #ffccb8 100%);
+  --gradient-secondary: linear-gradient(135deg, #ffccb8 0%, #ffe4d4 100%);
+}
+
+/* 深色模式支持 */
+@media (prefers-color-scheme: dark) {
+  [data-theme="rose-quartz"] {
+    --background-color: #1a1819;
+    --surface-color: #2d2526;
+    --card-background: #362d2e;
+    --text-primary: #f7f3f4;
+    --text-secondary: #e2d8d9;
+    --text-muted: #a39a9b;
+    --border-color: #4a3f40;
+  }
+
+  [data-theme="sage-green"] {
+    --background-color: #181a1a;
+    --surface-color: #262d26;
+    --card-background: #2e362e;
+    --text-primary: #f3f7f3;
+    --text-secondary: #d8e1d8;
+    --text-muted: #9aa39a;
+    --border-color: #3f4a3f;
+  }
+
+  [data-theme="lavender"] {
+    --background-color: #19181a;
+    --surface-color: #2d252d;
+    --card-background: #362d36;
+    --text-primary: #f7f3f8;
+    --text-secondary: #e2d8e2;
+    --text-muted: #a39aa3;
+    --border-color: #4a3f4a;
+  }
+
+  [data-theme="peach"] {
+    --background-color: #1a1918;
+    --surface-color: #2d2a25;
+    --card-background: #36322e;
+    --text-primary: #f8f7f3;
+    --text-secondary: #e1d8d9;
+    --text-muted: #a39a99;
+    --border-color: #4a3f3a;
+  }
+}
+
+/* 主题预览样式 */
+.theme-preview {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--border-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-preview::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--gradient-primary);
+}
+
+.theme-preview.rose-quartz::before {
+  background: linear-gradient(135deg, #e8b4b8 0%, #f4c2c2 100%);
+}
+
+.theme-preview.sage-green::before {
+  background: linear-gradient(135deg, #b8c9b8 0%, #a8c9a8 100%);
+}
+
+.theme-preview.lavender::before {
+  background: linear-gradient(135deg, #c8b8e8 0%, #e8d4f0 100%);
+}
+
+.theme-preview.peach::before {
+  background: linear-gradient(135deg, #ffd4a3 0%, #ffccb8 100%);
+}
+
+/* 主题切换动画 */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* 字体大小变量 */
+:root {
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+}
+
+[data-font-size="small"] {
+  --font-size-xs: 0.6875rem;
+  --font-size-sm: 0.8125rem;
+  --font-size-base: 0.9375rem;
+  --font-size-lg: 1.0625rem;
+  --font-size-xl: 1.1875rem;
+  --font-size-2xl: 1.4375rem;
+  --font-size-3xl: 1.75rem;
+  --font-size-4xl: 2.125rem;
+}
+
+[data-font-size="medium"] {
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+}
+
+[data-font-size="large"] {
+  --font-size-xs: 0.8125rem;
+  --font-size-sm: 0.9375rem;
+  --font-size-base: 1.0625rem;
+  --font-size-lg: 1.1875rem;
+  --font-size-xl: 1.3125rem;
+  --font-size-2xl: 1.5625rem;
+  --font-size-3xl: 1.9375rem;
+  --font-size-4xl: 2.375rem;
+}

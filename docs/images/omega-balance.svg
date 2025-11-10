@@ -1,0 +1,75 @@
+<svg width="500" height="600" viewBox="0 0 500 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="500" height="600" fill="#f8f9fa" rx="10"/>
+  
+  <!-- 标题 -->
+  <text x="250" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2c3e50">Omega-3 与 Omega-6 平衡</text>
+  
+  <!-- 平衡天平图示 -->
+  <g transform="translate(250, 200)">
+    <!-- 天平底座 -->
+    <rect x="-60" y="150" width="120" height="20" fill="#666" rx="2"/>
+    <rect x="-10" y="80" width="20" height="70" fill="#666"/>
+    
+    <!-- 天平横梁 -->
+    <rect x="-150" y="75" width="300" height="10" fill="#666" rx="2"/>
+    
+    <!-- 支点 -->
+    <circle cx="0" cy="80" r="8" fill="#333"/>
+    
+    <!-- 左侧 Omega-6 (通常过量) -->
+    <g transform="translate(-120, 85)">
+      <rect x="-40" y="0" width="80" height="60" fill="#ffebee" stroke="#f44336" stroke-width="2" rx="5"/>
+      <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#c62828">Omega-6</text>
+      <text x="0" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#c62828">促炎</text>
+      <text x="0" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#c62828">过量</text>
+      <!-- 倾斜指示 -->
+      <text x="0" y="-10" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#f44336">⚖️</text>
+    </g>
+    
+    <!-- 右侧 Omega-3 (通常不足) -->
+    <g transform="translate(120, 95)">
+      <rect x="-40" y="0" width="80" height="60" fill="#e8f5e8" stroke="#4caf50" stroke-width="2" rx="5"/>
+      <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2e7d32">Omega-3</text>
+      <text x="0" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2e7d32">抗炎</text>
+      <text x="0" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2e7d32">不足</text>
+    </g>
+  </g>
+  
+  <!-- 理想比例 -->
+  <g transform="translate(50, 320)">
+    <rect width="400" height="80" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" rx="8"/>
+    <text x="200" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1565c0">理想比例：Omega-6 : Omega-3 = 1:1 到 4:1</text>
+    <text x="200" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#1565c0">现代人实际比例：15:1 到 20:1</text>
+    <text x="200" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">严重失衡，导致慢性炎症状态</text>
+  </g>
+  
+  <!-- Omega-6 食物来源 -->
+  <g transform="translate(50, 420)">
+    <rect width="200" height="100" fill="#fff3e0" stroke="#ff9800" stroke-width="2" rx="8"/>
+    <text x="100" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#e65100">Omega-6 来源</text>
+    <text x="100" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• 植物油（玉米油、大豆油）</text>
+    <text x="100" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• 加工食品</text>
+    <text x="100" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• 肉类（饲料喂养）</text>
+    <text x="100" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• 煎炸食品</text>
+  </g>
+  
+  <!-- Omega-3 食物来源 -->
+  <g transform="translate(250, 420)">
+    <rect width="200" height="100" fill="#e8f5e8" stroke="#4caf50" stroke-width="2" rx="8"/>
+    <text x="100" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2e7d32">Omega-3 来源</text>
+    <text x="100" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• 深海鱼类（三文鱼、沙丁鱼）</text>
+    <text x="100" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• 亚麻籽、奇亚籽</text>
+    <text x="100" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• 核桃</text>
+    <text x="100" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• 海藻</text>
+  </g>
+  
+  <!-- 底部建议 -->
+  <g transform="translate(50, 540)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">改善建议：</text>
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="11" fill="#4caf50">• 每周吃2-3次深海鱼</text>
+    <text x="0" y="40" font-family="Arial, sans-serif" font-size="11" fill="#4caf50">• 用橄榄油替代其他植物油</text>
+    <text x="250" y="20" font-family="Arial, sans-serif" font-size="11" fill="#4caf50">• 添加亚麻籽粉到食物中</text>
+    <text x="250" y="40" font-family="Arial, sans-serif" font-size="11" fill="#4caf50">• 减少加工食品摄入</text>
+  </g>
+</svg>

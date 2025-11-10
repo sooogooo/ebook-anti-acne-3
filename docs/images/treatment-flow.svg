@@ -1,0 +1,87 @@
+<svg width="400" height="600" viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="400" height="600" fill="#f8f9fa" rx="10"/>
+  
+  <!-- 标题 -->
+  <text x="200" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2c3e50">痤疮治疗流程</text>
+  
+  <!-- 诊断 -->
+  <g transform="translate(100, 60)">
+    <rect width="200" height="60" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="30"/>
+    <text x="100" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1976d2">诊断评估</text>
+  </g>
+  
+  <!-- 箭头 -->
+  <path d="M 200 120 L 200 140" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 分级 -->
+  <g transform="translate(100, 140)">
+    <rect width="200" height="60" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="8"/>
+    <text x="100" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#7b1fa2">严重程度分级</text>
+    <text x="100" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">轻度/中度/重度</text>
+  </g>
+  
+  <!-- 箭头 -->
+  <path d="M 200 200 L 200 220" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 治疗方案 -->
+  <g transform="translate(50, 220)">
+    <rect width="120" height="50" fill="#e8f5e8" stroke="#4caf50" stroke-width="2" rx="8"/>
+    <text x="60" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2e7d32">轻度</text>
+    <text x="60" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">外用药物</text>
+  </g>
+  
+  <g transform="translate(140, 220)">
+    <rect width="120" height="50" fill="#fff3e0" stroke="#ff9800" stroke-width="2" rx="8"/>
+    <text x="60" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#e65100">中度</text>
+    <text x="60" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">联合治疗</text>
+  </g>
+  
+  <g transform="translate(230, 220)">
+    <rect width="120" height="50" fill="#ffebee" stroke="#f44336" stroke-width="2" rx="8"/>
+    <text x="60" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#c62828">重度</text>
+    <text x="60" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">口服药物</text>
+  </g>
+  
+  <!-- 箭头 -->
+  <path d="M 110 270 L 110 290" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 200 270 L 200 290" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 290 270 L 290 290" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 生活护理 -->
+  <g transform="translate(100, 290)">
+    <rect width="200" height="60" fill="#e0f2f1" stroke="#00796b" stroke-width="2" rx="8"/>
+    <text x="100" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#00796b">生活护理</text>
+    <text x="100" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">护肤 + 饮食 + 作息</text>
+  </g>
+  
+  <!-- 箭头 -->
+  <path d="M 200 350 L 200 370" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 定期复诊 -->
+  <g transform="translate(100, 370)">
+    <rect width="200" height="60" fill="#fff8e1" stroke="#ffa000" stroke-width="2" rx="8"/>
+    <text x="100" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ff6f00">定期复诊</text>
+    <text x="100" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">4-6周复查一次</text>
+  </g>
+  
+  <!-- 箭头 -->
+  <path d="M 200 430 L 200 450" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 效果评估 -->
+  <g transform="translate(100, 450)">
+    <rect width="200" height="60" fill="#e8f5e8" stroke="#4caf50" stroke-width="2" rx="30"/>
+    <text x="100" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2e7d32">效果评估</text>
+  </g>
+  
+  <!-- 箭头定义 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+  
+  <!-- 底部说明 -->
+  <text x="200" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">个体化治疗方案</text>
+  <text x="200" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">耐心坚持是成功的关键</text>
+</svg>

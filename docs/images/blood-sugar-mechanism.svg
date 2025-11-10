@@ -1,0 +1,78 @@
+<svg width="500" height="600" viewBox="0 0 500 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="500" height="600" fill="#f8f9fa" rx="10"/>
+  
+  <!-- 标题 -->
+  <text x="250" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2c3e50">血糖反应机制与痤疮形成</text>
+  
+  <!-- 第一阶段：高GI食物摄入 -->
+  <g transform="translate(50, 60)">
+    <rect width="400" height="60" fill="#e8f5e8" stroke="#4caf50" stroke-width="2" rx="8"/>
+    <text x="200" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2e7d32">阶段1：高GI食物摄入</text>
+    <text x="200" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2e7d32">白米饭、白面包、含糖饮料、蛋糕甜点</text>
+  </g>
+  
+  <!-- 箭头1 -->
+  <path d="M 250 120 L 250 140" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 第二阶段：血糖飙升 -->
+  <g transform="translate(50, 150)">
+    <rect width="400" height="60" fill="#fff3e0" stroke="#ff9800" stroke-width="2" rx="8"/>
+    <text x="200" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#e65100">阶段2：血糖迅速飙升</text>
+    <text x="200" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#e65100">血糖水平在短时间内急剧上升</text>
+  </g>
+  
+  <!-- 箭头2 -->
+  <path d="M 250 210 L 250 230" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 第三阶段：胰岛素大量分泌 -->
+  <g transform="translate(50, 240)">
+    <rect width="400" height="60" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" rx="8"/>
+    <text x="200" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1565c0">阶段3：胰岛素大量分泌</text>
+    <text x="200" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#1565c0">身体分泌大量胰岛素来降低血糖</text>
+  </g>
+  
+  <!-- 箭头3 -->
+  <path d="M 250 300 L 250 320" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 第四阶段：IGF-1增加 -->
+  <g transform="translate(50, 330)">
+    <rect width="400" height="60" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2" rx="8"/>
+    <text x="200" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#6a1b9a">阶段4：IGF-1（胰岛素样生长因子-1）增加</text>
+    <text x="200" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#6a1b9a">胰岛素刺激肝脏分泌更多IGF-1</text>
+  </g>
+  
+  <!-- 箭头4 -->
+  <path d="M 250 390 L 250 410" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 第五阶段：痤疮形成 -->
+  <g transform="translate(50, 420)">
+    <rect width="400" height="80" fill="#ffebee" stroke="#f44336" stroke-width="2" rx="8"/>
+    <text x="200" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#c62828">阶段5：痤疮形成</text>
+    <text x="200" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#c62828">• 刺激雄激素活性 → 皮脂分泌增加</text>
+    <text x="200" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#c62828">• 促进角质细胞增殖 → 毛囊堵塞</text>
+  </g>
+  
+  <!-- 侧边说明 -->
+  <g transform="translate(20, 520)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#666">关键机制：</text>
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="11" fill="#666">• 高GI食物 = 血糖过山车</text>
+    <text x="0" y="40" font-family="Arial, sans-serif" font-size="11" fill="#666">• 胰岛素 = 血糖调节剂</text>
+    <text x="0" y="60" font-family="Arial, sans-serif" font-size="11" fill="#666">• IGF-1 = 痘痘"总开关"</text>
+  </g>
+  
+  <!-- 右侧建议 -->
+  <g transform="translate(280, 520)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4caf50">解决方案：</text>
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="11" fill="#4caf50">• 选择低GI食物</text>
+    <text x="0" y="40" font-family="Arial, sans-serif" font-size="11" fill="#4caf50">• 主食"染上颜色"</text>
+    <text x="0" y="60" font-family="Arial, sans-serif" font-size="11" fill="#4caf50">• 调整进食顺序</text>
+  </g>
+  
+  <!-- 箭头定义 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+</svg>

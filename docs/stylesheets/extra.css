@@ -1,0 +1,307 @@
+/* 自定义样式文件 */
+
+/* 主页面样式 */
+.md-typeset h1 {
+    color: var(--md-primary-fg-color);
+    font-weight: 600;
+}
+
+.md-typeset h2 {
+    color: var(--md-primary-fg-color);
+    font-weight: 500;
+}
+
+/* 章节标题样式 */
+.md-typeset h3 {
+    color: var(--md-default-fg-color);
+    font-weight: 500;
+    border-bottom: 2px solid var(--md-accent-fg-color);
+    padding-bottom: 0.3em;
+}
+
+/* 引用块样式 */
+.md-typeset blockquote {
+    border-left: 4px solid var(--md-accent-fg-color);
+    background-color: var(--md-default-bg-color);
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 4px;
+}
+
+/* 代码块样式 */
+.md-typeset pre {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 表格样式 */
+.md-typeset table {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 1.5em auto;
+    width: 100%;
+    max-width: 800px;
+    table-layout: fixed;
+}
+
+.md-typeset table th {
+    background-color: var(--md-primary-fg-color);
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    padding: 12px 8px;
+}
+
+.md-typeset table td {
+    text-align: center;
+    padding: 10px 8px;
+    vertical-align: middle;
+}
+
+.md-typeset table tr:nth-child(even) {
+    background-color: var(--md-default-bg-color--light);
+}
+
+/* 页面内容等宽布局 */
+.md-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.md-typeset {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* 响应式表格 */
+@media screen and (max-width: 768px) {
+    .md-typeset table {
+        font-size: 0.9em;
+        max-width: 100%;
+    }
+    
+    .md-typeset table th,
+    .md-typeset table td {
+        padding: 8px 4px;
+    }
+    
+    .md-typeset {
+        max-width: 100%;
+        padding: 0 1em;
+    }
+}
+
+/* Mermaid图表移动端适配 */
+@media screen and (max-width: 768px) {
+    .mermaid {
+        font-size: 0.8em;
+        transform: scale(0.9);
+        transform-origin: top left;
+        width: 110%;
+        overflow-x: auto;
+    }
+    
+    .mermaid svg {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Mermaid图表通用样式 */
+.mermaid {
+    margin: 2em auto;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background-color: var(--md-default-bg-color);
+    padding: 1em;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.mermaid .nodeLabel {
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+/* SVG图片样式 */
+.md-typeset img {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.md-typeset img:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+/* 图片容器样式 */
+.image-container {
+    text-align: center;
+    margin: 2em 0;
+    padding: 1em;
+    background-color: var(--md-default-bg-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+}
+
+.image-container .image-caption {
+    margin-top: 1em;
+    font-size: 0.9em;
+    color: var(--md-default-fg-color--light);
+    text-align: center;
+}
+
+/* 响应式图片 */
+@media screen and (max-width: 768px) {
+    .image-container {
+        margin: 1.5em 0;
+        padding: 0.8em;
+    }
+    
+    .md-typeset img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* 提示框样式 */
+.md-typeset .admonition {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.md-typeset .admonition-title {
+    font-weight: 600;
+}
+
+/* 导航栏样式 */
+.md-nav__title {
+    font-weight: 600;
+    color: var(--md-primary-fg-color);
+}
+
+.md-nav__link--active {
+    color: var(--md-accent-fg-color);
+    font-weight: 500;
+}
+
+/* 搜索结果样式 */
+.md-search-result__meta {
+    color: var(--md-default-fg-color--light);
+}
+
+.md-search-result__article {
+    border-bottom: 1px solid var(--md-default-fg-color--lightest);
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+    .md-typeset h1 {
+        font-size: 1.8em;
+    }
+    
+    .md-typeset h2 {
+        font-size: 1.5em;
+    }
+    
+    .md-typeset h3 {
+        font-size: 1.3em;
+    }
+}
+
+/* 打印样式 */
+@media print {
+    .md-sidebar,
+    .md-header,
+    .md-footer {
+        display: none;
+    }
+    
+    .md-content {
+        margin-left: 0 !important;
+    }
+    
+    .md-typeset {
+        font-size: 12pt;
+    }
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--md-default-bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--md-accent-fg-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--md-accent-fg-color--light);
+}
+
+/* 动画效果 */
+.md-typeset a {
+    transition: color 0.3s ease;
+}
+
+.md-typeset a:hover {
+    color: var(--md-accent-fg-color);
+}
+
+/* 章节编号样式 */
+.chapter-number {
+    display: inline-block;
+    background-color: var(--md-primary-fg-color);
+    color: white;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+/* 高亮重要内容 */
+.highlight-box {
+    background-color: var(--md-accent-fg-color--light);
+    border-left: 4px solid var(--md-accent-fg-color);
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 4px;
+}
+
+/* 医疗警告样式 */
+.medical-warning {
+    background-color: #fff3cd;
+    border: 1px solid #ffeaa7;
+    color: #856404;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 4px;
+}
+
+.medical-warning::before {
+    content: "⚠️ ";
+    font-weight: bold;
+    margin-right: 0.5em;
+}

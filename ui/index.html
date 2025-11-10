@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>专业痤疮治疗指南</title>
+    <meta name="description" content="皮肤科医生视角的专业痤疮治疗指南">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- 字体预加载 -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" as="style">
+
+    <!-- Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+    <!-- 导出功能所需的库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/themes.css">
+    <link rel="stylesheet" href="assets/css/ios-compatibility.css">
+</head>
+<body data-theme="rose-quartz">
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-left">
+                <img src="assets/images/logo.png" alt="Logo" class="logo" loading="eager" decoding="async">
+                <div class="header-title">
+                    <h1 class="site-title">专业痤疮治疗指南</h1>
+                    <p class="site-subtitle">皮肤科医生的专业建议</p>
+                </div>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="菜单">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">
+                    <span class="material-symbols-outlined">home</span>
+                    <span>首页</span>
+                </a>
+                <a href="#ai-chat" class="nav-link">
+                    <span class="material-symbols-outlined">chat</span>
+                    <span>AI助手</span>
+                </a>
+                <a href="#design" class="nav-link">
+                    <span class="material-symbols-outlined">palette</span>
+                    <span>设计工具</span>
+                </a>
+                <a href="#history" class="nav-link">
+                    <span class="material-symbols-outlined">history</span>
+                    <span>历史记录</span>
+                </a>
+                <a href="#settings" class="nav-link" id="settingsBtn">
+                    <span class="material-symbols-outlined">settings</span>
+                    <span>设置</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 class="hero-title">科学治疗，专业护理</h2>
+                    <p class="hero-subtitle">基于现代医学研究的痤疮治疗方案</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">12</span>
+                            <span class="stat-label">专业章节</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">7</span>
+                            <span class="stat-label">可视化图表</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">治疗方案</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-card">
+                        <div class="card-icon">
+                            <span class="material-symbols-outlined">medical_services</span>
+                        </div>
+                        <p>专业医学内容</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EBook Entrance Section -->
+        <section class="ebook-entrance">
+            <div class="container">
+                <div class="ebook-hero">
+                    <div class="ebook-cover">
+                        <div class="book-cover">
+                            <div class="book-spine"></div>
+                            <div class="book-front">
+                                <div class="book-title">专业痤疮治疗指南</div>
+                                <div class="book-subtitle">皮肤科医生的专业视角</div>
+                                <div class="book-author">医学专家团队</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ebook-info">
+                        <h2 class="ebook-title">完整电子书</h2>
+                        <p class="ebook-description">
+                            由皮肤科医生撰写的专业痤疮治疗指南，涵盖从基础认识到高级治疗的全方位内容。包含12个专业章节，7个医学图表，为您提供科学、权威的护肤指导。
+                        </p>
+                        <div class="ebook-stats">
+                            <div class="ebook-stat">
+                                <span class="stat-icon">
+                                    <span class="material-symbols-outlined">menu_book</span>
+                                </span>
+                                <div class="stat-info">
+                                    <span class="stat-value">12</span>
+                                    <span class="stat-label">专业章节</span>
+                                </div>
+                            </div>
+                            <div class="ebook-stat">
+                                <span class="stat-icon">
+                                    <span class="material-symbols-outlined">image</span>
+                                </div>
+                                <div class="stat-info">
+                                    <span class="stat-value">7</span>
+                                    <span class="stat-label">医学图表</span>
+                                </div>
+                            </div>
+                            <div class="ebook-stat">
+                                <span class="stat-icon">
+                                    <span class="material-symbols-outlined">description</span>
+                                </div>
+                                <div class="stat-info">
+                                    <span class="stat-value">2897</span>
+                                    <span class="stat-label">专业内容</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ebook-actions">
+                            <a href="ebook/index.html" class="ebook-btn primary" target="_blank">
+                                <span class="material-symbols-outlined">auto_stories</span>
+                                <span>阅读完整电子书</span>
+                            </a>
+                            <button class="ebook-btn secondary" id="previewBook">
+                                <span class="material-symbols-outlined">visibility</span>
+                                <span>预览章节</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter Preview -->
+                <div class="chapter-preview" id="chapterPreview">
+                    <h3 class="preview-title">章节概览</h3>
+                    <div class="chapter-grid">
+                        <div class="chapter-card featured">
+                            <div class="chapter-number">01</div>
+                            <div class="chapter-info">
+                                <h4 class="chapter-title">痤疮的专业诊断</h4>
+                                <p class="chapter-desc">了解不同类型痤疮的特征和诊断方法</p>
+                                <div class="chapter-tags">
+                                    <span class="tag">基础认识</span>
+                                    <span class="tag">诊断要点</span>
+                                </div>
+                            </div>
+                            <div class="chapter-icon">
+                                <span class="material-symbols-outlined">medical_information</span>
+                            </div>
+                        </div>
+
+                        <div class="chapter-card">
+                            <div class="chapter-number">02</div>
+                            <div class="chapter-info">
+                                <h4 class="chapter-title">心理影响与调适</h4>
+                                <p class="chapter-desc">痤疮对心理健康的影响及应对策略</p>
+                                <div class="chapter-tags">
+                                    <span class="tag">心理健康</span>
+                                </div>
+                            </div>
+                            <div class="chapter-icon">
+                                <span class="material-symbols-outlined">psychology</span>
+                            </div>
+                        </div>
+
+                        <div class="chapter-card">
+                            <div class="chapter-number">03</div>
+                            <div class="chapter-info">
+                                <h4 class="chapter-title">药物治疗方案</h4>
+                                <p class="chapter-desc">口服和外用药物的选择与使用指导</p>
+                                <div class="chapter-tags">
+                                    <span class="tag">药物治疗</span>
+                                </div>
+                            </div>
+                            <div class="chapter-icon">
+                                <span class="material-symbols-outlined">medication</span>
+                            </div>
+                        </div>
+
+                        <div class="chapter-card">
+                            <div class="chapter-number">04</div>
+                            <div class="chapter-info">
+                                <h4 class="chapter-title">光电治疗技术</h4>
+                                <p class="chapter-desc">现代医美技术在痤疮治疗中的应用</p>
+                                <div class="chapter-tags">
+                                    <span class="tag">医美技术</span>
+                                </div>
+                            </div>
+                            <div class="chapter-icon">
+                                <span class="material-symbols-outlined">lightbulb</span>
+                            </div>
+                        </div>
+
+                        <div class="chapter-card">
+                            <div class="chapter-number">05</div>
+                            <div class="chapter-info">
+                                <h4 class="chapter-title">特色治疗方法</h4>
+                                <p class="chapter-desc">三明治疗法和组合疗法的实践应用</p>
+                                <div class="chapter-tags">
+                                    <span class="tag">特色疗法</span>
+                                </div>
+                            </div>
+                            <div class="chapter-icon">
+                                <span class="material-symbols-outlined">healing</span>
+                            </div>
+                        </div>
+
+                        <div class="chapter-card">
+                            <div class="chapter-number">06</div>
+                            <div class="chapter-info">
+                                <h4 class="chapter-title">科学护肤流程</h4>
+                                <p class="chapter-desc">建立正确的日常护肤习惯和方法</p>
+                                <div class="chapter-tags">
+                                    <span class="tag">日常护理</span>
+                                </div>
+                            </div>
+                            <div class="chapter-icon">
+                                <span class="material-symbols-outlined">face</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="preview-actions">
+                        <a href="ebook/index.html" class="view-all-btn" target="_blank">
+                            查看全部12个章节
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Actions -->
+        <section class="quick-actions">
+            <div class="container">
+                <h3 class="section-title">智能工具</h3>
+                <div class="action-grid">
+                    <button class="action-card" id="aiChatBtn">
+                        <div class="action-icon">
+                            <span class="material-symbols-outlined">smart_toy</span>
+                        </div>
+                        <h4 class="action-title">AI咨询助手</h4>
+                        <p class="action-desc">智能问答，个性化建议</p>
+                        <div class="suggested-questions">
+                            <span class="question-tag">如何治疗痘痘？</span>
+                            <span class="question-tag">适合的护肤品？</span>
+                        </div>
+                    </button>
+
+                    <button class="action-card" id="designToolBtn">
+                        <div class="action-icon">
+                            <span class="material-symbols-outlined">brush</span>
+                        </div>
+                        <h4 class="action-title">护肤方案设计</h4>
+                        <p class="action-desc">个性化护肤方案生成</p>
+                        <div class="feature-tags">
+                            <span class="tag">可视化设计</span>
+                            <span class="tag">报告导出</span>
+                        </div>
+                    </button>
+
+                    <button class="action-card" id="quickGuideBtn">
+                        <div class="action-icon">
+                            <span class="material-symbols-outlined">summarize</span>
+                        </div>
+                        <h4 class="action-title">快速总结</h4>
+                        <p class="action-desc">电子书核心要点提炼</p>
+                        <div class="feature-tags">
+                            <span class="tag">精华总结</span>
+                            <span class="tag">快速浏览</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Sections -->
+        <section class="content-sections">
+            <div class="container">
+                <div class="section-tabs">
+                    <button class="tab-btn active" data-tab="understanding">认识问题</button>
+                    <button class="tab-btn" data-tab="treatment">医学治疗</button>
+                    <button class="tab-btn" data-tab="care">生活护理</button>
+                </div>
+
+                <div class="tab-content" id="understanding">
+                    <div class="content-card">
+                        <h4>痤疮的类型与成因</h4>
+                        <p>了解不同类型的痤疮及其成因是有效治疗的第一步...</p>
+                        <div class="content-preview">
+                            <img src="assets/images/acne-types.svg" alt="痤疮类型" class="preview-image" loading="lazy" decoding="async">
+                        </div>
+                        <button class="read-more-btn" onclick="window.location.href='ebook/part1/chapter1/index.html'">了解更多 →</button>
+                    </div>
+                </div>
+
+                <div class="tab-content hidden" id="treatment">
+                    <div class="content-card">
+                        <h4>专业治疗方案</h4>
+                        <p>从药物治疗到物理治疗，全面的医学治疗方案...</p>
+                        <div class="treatment-options">
+                            <div class="option-card" onclick="window.location.href='ebook/part2/chapter3/index.html#oral-medications'">口服药物</div>
+                            <div class="option-card" onclick="window.location.href='ebook/part2/chapter3/index.html#topical-medications'">外用药物</div>
+                            <div class="option-card" onclick="window.location.href='ebook/part2/chapter4/index.html'">物理治疗</div>
+                        </div>
+                        <button class="read-more-btn" onclick="window.location.href='ebook/part2/chapter3/index.html'">了解更多 →</button>
+                    </div>
+                </div>
+
+                <div class="tab-content hidden" id="care">
+                    <div class="content-card">
+                        <h4>科学护理方法</h4>
+                        <p>日常护理习惯对痤疮治疗的重要性...</p>
+                        <div class="care-tips">
+                            <div class="tip-item" onclick="window.location.href='ebook/part3/chapter6/index.html#skincare-routine'">清洁护理</div>
+                            <div class="tip-item" onclick="window.location.href='ebook/part3/chapter7/index.html'">饮食调理</div>
+                            <div class="tip-item" onclick="window.location.href='ebook/part3/chapter8/index.html'">生活习惯</div>
+                        </div>
+                        <button class="read-more-btn" onclick="window.location.href='ebook/part3/chapter6/index.html'">了解更多 →</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h5 class="footer-title">主要功能</h5>
+                <ul class="footer-links">
+                    <li><a href="#" onclick="openModal(document.getElementById('aiChatModal'))">AI咨询助手</a></li>
+                    <li><a href="#" onclick="openModal(document.getElementById('designModal'))">方案设计</a></li>
+                    <li><a href="#" onclick="showHistoryModal()">历史记录</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h5 class="footer-title">联系信息</h5>
+                <div class="contact-info">
+                    <p><span class="material-symbols-outlined">location_on</span> 重庆市渝中区临江支路28号</p>
+                    <p><span class="material-symbols-outlined">phone</span> 023-63326559</p>
+                    <p><span class="material-symbols-outlined">email</span> yuxiaodong@beaucare.org</p>
+                </div>
+                <div class="qr-code">
+                    <img src="assets/images/contact-qr.png" alt="联系我们" class="qr-image" loading="lazy" decoding="async">
+                    <p>扫码联系</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="company-info">
+                <p>&copy; 2024 重庆联合丽格科技有限公司</p>
+                <p class="icp-info">
+                    <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">
+                        渝ICP备2024023473号
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Settings Modal -->
+    <div class="modal-overlay" id="settingsModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>设置</h3>
+                <button class="close-btn" id="closeSettings">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+
+            <div class="modal-content">
+                <div class="setting-group">
+                    <h4>主题配色</h4>
+                    <div class="theme-options">
+                        <button class="theme-btn active" data-theme="rose-quartz">
+                            <div class="theme-preview rose-quartz"></div>
+                            <span>玫瑰石英</span>
+                        </button>
+                        <button class="theme-btn" data-theme="sage-green">
+                            <div class="theme-preview sage-green"></div>
+                            <span>鼠尾草绿</span>
+                        </button>
+                        <button class="theme-btn" data-theme="lavender">
+                            <div class="theme-preview lavender"></div>
+                            <span>淡紫薰衣草</span>
+                        </button>
+                        <button class="theme-btn" data-theme="peach">
+                            <div class="theme-preview peach"></div>
+                            <span>蜜桃粉</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="setting-group">
+                    <h4>字号大小</h4>
+                    <div class="font-size-options">
+                        <button class="font-btn" data-size="small">小</button>
+                        <button class="font-btn active" data-size="medium">中</button>
+                        <button class="font-btn" data-size="large">大</button>
+                    </div>
+                </div>
+
+                <div class="setting-group">
+                    <h4>AI输出风格</h4>
+                    <div class="ai-style-options">
+                        <button class="style-btn" data-style="humorous">轻松幽默</button>
+                        <button class="style-btn active" data-style="standard">标准日常</button>
+                        <button class="style-btn" data-style="scientific">科学严谨</button>
+                    </div>
+                </div>
+
+                <div class="setting-group">
+                    <h4>AI输出长度</h4>
+                    <div class="ai-length-options">
+                        <button class="length-btn" data-length="detailed">详细</button>
+                        <button class="length-btn" data-length="standard">标准</button>
+                        <button class="length-btn active" data-length="concise">简约</button>
+                    </div>
+                </div>
+
+                <div class="setting-group">
+                    <h4>AI API配置</h4>
+                    <div class="api-config">
+                        <label for="apiKey">API密钥 (可选)</label>
+                        <input type="password" id="apiKey" placeholder="输入OpenAI API密钥以启用真实AI">
+                        <small>留空将使用本地模拟回复。密钥将安全存储在本地。</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Chat Modal -->
+    <div class="modal-overlay" id="aiChatModal">
+        <div class="modal ai-chat-modal">
+            <div class="modal-header">
+                <h3>AI咨询助手</h3>
+                <button class="close-btn" id="closeAiChat">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="ai-message">
+                        <div class="message-avatar">
+                            <span class="material-symbols-outlined">smart_toy</span>
+                        </div>
+                        <div class="message-content">
+                            <p>您好！我是您的AI咨询助手，有什么关于痤疮治疗的问题需要帮助吗？</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="suggested-questions" id="suggestedQuestions">
+                    <h5>推荐问题</h5>
+                    <div class="question-chips">
+                        <button class="question-chip">如何治疗成人痘？</button>
+                        <button class="question-chip">哪些食物会加重痘痘？</button>
+                        <button class="question-chip">如何选择合适的护肤品？</button>
+                        <button class="question-chip">熬夜对痘痘有什么影响？</button>
+                    </div>
+                </div>
+
+                <div class="chat-input-container">
+                    <div class="input-wrapper">
+                        <input type="text" id="chatInput" placeholder="输入您的问题...">
+                        <button class="send-btn" id="sendMessage">
+                            <span class="material-symbols-outlined">send</span>
+                        </button>
+                    </div>
+                    <button class="voice-btn" id="voiceInput">
+                        <span class="material-symbols-outlined">mic</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Design Tool Modal -->
+    <div class="modal-overlay" id="designModal">
+        <div class="modal design-modal">
+            <div class="modal-header">
+                <h3>护肤方案设计</h3>
+                <button class="close-btn" id="closeDesign">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+
+            <div class="design-container">
+                <div class="design-form">
+                    <div class="form-group">
+                        <label>皮肤类型</label>
+                        <select id="skinType">
+                            <option value="oily">油性皮肤</option>
+                            <option value="dry">干性皮肤</option>
+                            <option value="combination">混合性皮肤</option>
+                            <option value="sensitive">敏感性皮肤</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>痤疮严重程度</label>
+                        <div class="severity-slider">
+                            <input type="range" id="acneSeverity" min="1" max="5" value="3">
+                            <div class="severity-labels">
+                                <span>轻微</span>
+                                <span>中等</span>
+                                <span>严重</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>主要需求</label>
+                        <div class="need-checkboxes">
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="anti-inflammatory">
+                                <span>抗炎舒缓</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="oil-control">
+                                <span>控油保湿</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="scar-treatment">
+                                <span>淡化疤痕</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button class="generate-btn" id="generatePlan">生成方案</button>
+                </div>
+
+                <div class="design-result" id="designResult">
+                    <div class="result-loading hidden">
+                        <div class="loading-spinner"></div>
+                        <p>正在生成个性化方案...</p>
+                    </div>
+
+                    <div class="result-content hidden">
+                        <div class="plan-summary">
+                            <h4>您的护肤方案</h4>
+                            <div class="plan-visualization" id="planVisualization">
+                                <!-- 动态生成的可视化方案 -->
+                            </div>
+                        </div>
+
+                        <div class="export-options">
+                            <button class="export-btn" data-format="png">
+                                <span class="material-symbols-outlined">image</span>
+                                导出图片
+                            </button>
+                            <button class="export-btn" data-format="pdf">
+                                <span class="material-symbols-outlined">picture_as_pdf</span>
+                                导出PDF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

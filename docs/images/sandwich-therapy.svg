@@ -1,0 +1,53 @@
+<svg width="400" height="500" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="400" height="500" fill="#f8f9fa" rx="10"/>
+  
+  <!-- 标题 -->
+  <text x="200" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2c3e50">三明治治疗法</text>
+  
+  <!-- 顶层 - 清洁 -->
+  <g transform="translate(50, 60)">
+    <rect width="300" height="100" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="8"/>
+    <text x="150" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1976d2">第一层：清洁</text>
+    <text x="150" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">温和洁面 + 去角质</text>
+    <text x="150" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#999">清除多余油脂和死皮</text>
+    <text x="150" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#999">为后续治疗做准备</text>
+  </g>
+  
+  <!-- 中层 - 治疗 -->
+  <g transform="translate(50, 180)">
+    <rect width="300" height="120" fill="#fff3e0" stroke="#ff9800" stroke-width="2" rx="8"/>
+    <text x="150" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#e65100">第二层：治疗</text>
+    <text x="150" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">外用药物 + 口服药物</text>
+    <text x="150" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#999">维A酸、抗生素、过氧化苯甲酰</text>
+    <text x="150" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#999">针对病因精准治疗</text>
+    <text x="150" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#999">分层、分时、联合用药</text>
+  </g>
+  
+  <!-- 底层 - 修复 -->
+  <g transform="translate(50, 320)">
+    <rect width="300" height="100" fill="#e8f5e8" stroke="#4caf50" stroke-width="2" rx="8"/>
+    <text x="150" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2e7d32">第三层：修复</text>
+    <text x="150" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">保湿 + 防晒 + 修复</text>
+    <text x="150" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#999">修复皮肤屏障功能</text>
+    <text x="150" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#999">预防复发和色素沉着</text>
+  </g>
+  
+  <!-- 连接箭头 -->
+  <path d="M 200 160 L 200 180" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 200 300 L 200 320" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 底部说明 -->
+  <g transform="translate(50, 440)">
+    <text x="150" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#666">核心优势</text>
+    <text x="150" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">• 系统化治疗，避免单一用药的局限性</text>
+    <text x="150" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">• 减少耐药性，提高治疗效果</text>
+  </g>
+  
+  <!-- 箭头定义 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+</svg>

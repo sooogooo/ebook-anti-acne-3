@@ -1,0 +1,407 @@
+/* iOS设备特殊兼容性优化 */
+
+/* iOS Safari 特殊处理 */
+@supports (-webkit-touch-callout: none) {
+    /* 修复iOS Safari的viewport高度问题 */
+    .hero {
+        min-height: -webkit-fill-available;
+    }
+
+    .modal {
+        max-height: 85vh;
+        max-height: -webkit-fill-available;
+    }
+
+    /* 修复iOS Safari的输入框焦点问题 */
+    input[type="text"],
+    input[type="range"],
+    select,
+    textarea {
+        -webkit-appearance: none;
+        appearance: none;
+        border-radius: 12px;
+        background: var(--card-background);
+    }
+
+    /* iOS Safari 滚动优化 */
+    .chat-messages,
+    .modal-content {
+        -webkit-overflow-scrolling: touch;
+        overflow-scrolling: touch;
+    }
+
+    /* iOS Safari 动画性能优化 */
+    .modal-overlay {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .modal {
+        -webkit-transform: scale(0.9) translateZ(0);
+        transform: scale(0.9) translateZ(0);
+    }
+
+    .modal-overlay.active .modal {
+        -webkit-transform: scale(1) translateZ(0);
+        transform: scale(1) translateZ(0);
+    }
+
+    /* iOS Safari 文字选择优化 */
+    .message-content {
+        -webkit-user-select: text;
+        user-select: text;
+    }
+
+    /* iOS Safari 触摸优化 */
+    .nav-link,
+    .action-card,
+    .button,
+    .tab-btn {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    /* iOS Safari 固定定位优化 */
+    .header {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    /* iOS Safari 安全区域适配 */
+    .header-container {
+        padding-left: env(safe-area-inset-left, 1rem);
+        padding-right: env(safe-area-inset-right, 1rem);
+    }
+
+    .main-content {
+        padding-top: env(safe-area-inset-top, 64px);
+    }
+
+    /* iOS Safari 键盘弹出适配 */
+    .chat-input-container {
+        margin-bottom: env(safe-area-inset-bottom, 0);
+    }
+
+    /* iOS Safari 底部安全区域 */
+    .footer {
+        padding-bottom: calc(1rem + env(safe-area-inset-bottom, 0));
+    }
+
+    /* iOS Safari 音频输入权限 */
+    .voice-btn {
+        -webkit-microphone: none;
+    }
+
+    /* iOS Safari 链接样式 */
+    a {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    /* iOS Safari 禁用长按菜单 */
+    img {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    /* iOS Safari 3D变换优化 */
+    .floating-card {
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-perspective: 1000px;
+        perspective: 1000px;
+    }
+
+    @keyframes float {
+        0%, 100% {
+            -webkit-transform: translateY(0) translateZ(0);
+            transform: translateY(0) translateZ(0);
+        }
+        50% {
+            -webkit-transform: translateY(-10px) translateZ(0);
+            transform: translateY(-10px) translateZ(0);
+        }
+    }
+}
+
+/* iOS Chrome 特殊处理 */
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: .001dpcm) {
+    .header {
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        background: rgba(255, 255, 255, 0.95);
+    }
+}
+
+/* iOS 版本特定优化 */
+/* iOS 13+ */
+@supports (font: -apple-system-body) and (-webkit-appearance: none) {
+    .nav-menu {
+        padding-top: 20px; /* 为iOS 13+的刘海屏留出空间 */
+    }
+}
+
+/* iOS 14+ */
+@supports (backdrop-filter: blur(1px)) {
+    .modal-overlay {
+        backdrop-filter: saturate(180%) blur(20px);
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+    }
+}
+
+/* iOS 15+ */
+@supports (padding: max(0px)) {
+    .modal {
+        padding: max(1.5rem, env(safe-area-inset-top));
+    }
+}
+
+/* 小屏幕iPhone优化 */
+@media screen and (max-width: 375px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .action-card {
+        padding: 1rem;
+    }
+
+    .modal {
+        max-width: 95vw;
+        max-height: 90vh;
+    }
+
+    .chat-container {
+        height: 350px;
+    }
+}
+
+/* iPhone X 及以上设备 */
+@media screen and (min-width: 375px) and (max-width: 414px) {
+    .header-container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+/* iPad优化 */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .modal {
+        max-width: 600px;
+    }
+
+    .ai-chat-modal {
+        max-width: 500px;
+    }
+
+    .design-modal {
+        max-width: 700px;
+    }
+}
+
+/* iOS设备上的触摸反馈 */
+@media (hover: none) and (pointer: coarse) {
+    .nav-link:active,
+    .action-card:active,
+    .button:active,
+    .tab-btn:active {
+        transform: scale(0.98);
+        transition: transform 0.1s ease;
+    }
+
+    .send-btn:active,
+    .voice-btn:active {
+        transform: scale(0.95);
+    }
+}
+
+/* iOS设备上的滚动优化 */
+@media (hover: none) {
+    .chat-messages {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .chat-messages::-webkit-scrollbar {
+        display: none;
+    }
+
+    .modal-content {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .modal-content::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+/* iOS设备上的语音输入优化 */
+.voice-btn.recording {
+    background: #ff4444;
+    color: white;
+    -webkit-animation: pulse 1.5s infinite;
+    animation: pulse 1.5s infinite;
+}
+
+@-webkit-keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1; }
+}
+
+/* iOS设备上的输入法兼容性 */
+input[type="text"] {
+    -webkit-user-select: text;
+    user-select: text;
+}
+
+/* iOS设备上的模态框滚动优化 */
+.modal-overlay.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+/* iOS设备上的链接跳转优化 */
+.footer-links a,
+.icp-info a {
+    -webkit-tap-highlight-color: rgba(232, 180, 184, 0.2);
+}
+
+/* iOS设备上的文件下载兼容性 */
+.export-btn {
+    -webkit-tap-highlight-color: rgba(232, 180, 184, 0.2);
+}
+
+/* iOS设备上的二维码显示优化 */
+.qr-image {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
+/* iOS设备上的表单元素优化 */
+.form-group select,
+.form-group input[type="range"] {
+    background: var(--card-background);
+    border: 1px solid var(--border-color);
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* iOS设备上的复选框优化 */
+input[type="checkbox"] {
+    width: 1.25rem;
+    height: 1.25rem;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    background: var(--card-background);
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background: var(--gradient-primary);
+    border-color: var(--primary-color);
+}
+
+input[type="checkbox"]:checked::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+/* iOS设备上的滑块优化 */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 6px;
+    background: var(--border-color);
+    border-radius: 3px;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* iOS设备上的加载动画优化 */
+.loading-spinner {
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* iOS设备上的字体渲染优化 */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* iOS设备上的图片加载优化 */
+img {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* iOS设备上的SVG显示优化 */
+svg {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
